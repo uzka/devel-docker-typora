@@ -14,11 +14,23 @@ typora myFile.me
 
 ## Installation
 
+### From docker hub
+
 ```sh
 # Install docker for your distribution
 git clone https://gitlab.com/uzka/devel-docker-typora.git
 cd devel-docker-typora
 make download
+sudo make install
+```
+
+### Local build
+
+```sh
+# Install docker for your distribution
+git clone https://gitlab.com/uzka/devel-docker-typora.git
+cd devel-docker-typora
+make
 sudo make install
 ```
 
