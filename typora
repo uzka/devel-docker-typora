@@ -1,0 +1,18 @@
+#!/bin/bash
+CONFIGDIR=$HOME/.dockerconfig/typora
+if [ ! -f $CONFIGDIR/.config ] ; then
+	mkdir -p $CONFIGDIR/.config
+fi
+echo 'XDG_DOCUMENTS_DIR="/data"' > $CONFIGDIR/.config/user-dirs.dirs
+docker run \
+	-u 1000:1000 \
+	--rm \
+	--net=host \
+	--env="DISPLAY" \
+	--env="HOME=/typoraconfig" \
+	--volume="$HOME/.Xauthority:/root/.Xauthority:ro" \
+	--volume="$PWD:/data:rw" \
+	--volume="$CONFIGDIR:/typoraconfig:rw" \
+	-w "/data" \
+	uzka/typora \
+	typora $1
