@@ -15,7 +15,7 @@ $(DOCKERIMAGENAME): Dockerfile public-key.asc
 distclean:
 	rm -fr $(DOCKERIMAGENAME)
 	docker rmi $(DOCKERIMAGENAME)
-maintainerclean: distclean
+maintainer-clean: distclean
 	rm -f public-key.asc
 
 install: all

@@ -5,7 +5,7 @@ if [ ! -f $CONFIGDIR/.config ] ; then
 fi
 echo 'XDG_DOCUMENTS_DIR="/data"' > $CONFIGDIR/.config/user-dirs.dirs
 docker run \
-	-u 1000:1000 \
+	-u $(id -u):$(id -g) \
 	--rm \
 	--net=host \
 	--env="DISPLAY" \
