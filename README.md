@@ -1,5 +1,9 @@
 # Typora on Docker
 
+## License
+
+Attention : Typora is not a free software, your can't modify Typora. See [https://support.typora.io/License-Agreement/](https://support.typora.io/License-Agreement/) for more information about that.
+
 ## Objective
 
 Use typora on a docker
