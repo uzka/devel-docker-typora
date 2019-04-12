@@ -26,6 +26,9 @@ $(DOCKERIMAGENAME): Dockerfile public-key.asc
 	mkdir -p $(@D)
 	touch $@
 
+download:
+	docker pull $(DOCKERIMAGENAME)
+
 distclean:
 	rm -fr $(DOCKERIMAGENAME)
 	docker rmi $(DOCKERIMAGENAME)

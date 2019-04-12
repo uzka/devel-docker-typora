@@ -2,7 +2,7 @@
 
 ## License
 
-**<u>ATTENTION</u>** : Typora is not a free software, your can't modify Typora. See [https://support.typora.io/License-Agreement/](https://support.typora.io/License-Agreement/) for more information about that.
+**<u>ATTENTION</u>** : Typora is not a free software, your can't modify Typora. See [https://support.typora.io/License-Agreement/](https://support.typora.io/License-Agreement/) for more information about that. Only my script is under Apache license.
 
 ## Objective
 
