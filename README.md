@@ -2,7 +2,7 @@
 
 ## License
 
-Attention : Typora is not a free software, your can't modify Typora. See [https://support.typora.io/License-Agreement/](https://support.typora.io/License-Agreement/) for more information about that.
+**<u>ATTENTION</u>** : Typora is not a free software, your can't modify Typora. See [https://support.typora.io/License-Agreement/](https://support.typora.io/License-Agreement/) for more information about that.
 
 ## Objective
 
@@ -13,7 +13,7 @@ Use typora on a docker
 The next command make `~/.dockerconfig/typora` for configuration and launch a uzka/typora Docker with a volume of current directory.
 
 ```sh
-typora myFile.me
+typora myFile.md
 ```
 
 ## Installation
