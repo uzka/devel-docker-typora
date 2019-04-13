@@ -15,6 +15,7 @@
 # docker build -t test .
 DOCKER=docker
 DOCKERIMAGENAME=uzka/typora
+DOCKERIMAGENAMEDIR=uzka/
 
 all: $(DOCKERIMAGENAME)
 
@@ -23,11 +24,13 @@ public-key.asc:
 
 $(DOCKERIMAGENAME): Dockerfile public-key.asc
 	docker build -t $@ .
-	mkdir -p $(@D)
+	mkdir -p $(DOCKERIMAGENAMEDIR)
 	touch $@
 
 download:
 	docker pull $(DOCKERIMAGENAME)
+	mkdir -p $(DOCKERIMAGENAMEDIR)
+	touch $(DOCKERIMAGENAME)
 
 distclean:
 	rm -fr $(DOCKERIMAGENAME)
